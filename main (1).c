@@ -12,17 +12,18 @@ Continuous Assessment 3 Question 1
 #include <stdbool.h>
 
 int main() {
-	// declares characters
+	// declares variable as characters
 	char direction, L, R, D, U;
 
 	printf("-- PROGRAMME USED TO DIRECT THE HONEY BADGER --\n");
 
-    // loops untile valid character is entered
+    // loops until a valid character is entered
 	while(true) {
 		// accepts user's input
 		printf("\n-- HONEY BADGER'S DIRECTIONS -- "
 		       "\nL is Left \nR is Right \nU is Up \nD is Down "
 		       "\n\nPlease enter the honey badger's direction: ");
+		// leading space gets rid of any newline character from previous input
 		scanf(" %c", &direction);
 
 		// depends on user's input; if l is entered, lion, if r, then rattlesnake, if u, then uakari, and finally, if d, dhole
