@@ -10,7 +10,7 @@ b. 1 CAD = 115.00 JMD
 c. 1 GBP = 186.90 JMD
 d. 1 EURO = 167.80 JMD
 Design a program that displays the above menu. It should then accept the currency type and amount. Determine the amount
-in Jamaican currency based on the option inputted. Accept only the currencies listed. Assume correct entries.
+in Jamaican currency based on the option input. Accept only the currencies listed. Assume correct entries.
 
 ***************************/
 
@@ -18,7 +18,7 @@ in Jamaican currency based on the option inputted. Accept only the currencies li
 #include <string.h>
 
 int main() {
-    // declare variables as characters and real numbers
+    // declare variables and constants as characters and real numbers
 	char currencytype[10];
 	float amount, jamaicancurrency;
 	const float USDRATE = 153.5, CADRATE = 115.00, EURORATE = 167.80, GBPRATE = 186.90;
@@ -36,7 +36,7 @@ int main() {
 	scanf("%f", &amount);
 
     // convert based on user's selected currency
-	if (strcmp(currencytype, "USD") == 0|| strcmp(currencytype, "usd") == 0) {
+	if (strcmp(currencytype, "USD") == 0 || strcmp(currencytype, "usd") == 0) {
 		printf("Rate: 1 USD = %.2f JMD", USDRATE);
 		jamaicancurrency = amount * USDRATE;
 	} else if (strcmp(currencytype, "CAD") == 0 || strcmp(currencytype, "cad") == 0) {
